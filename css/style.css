@@ -112,6 +112,7 @@ header {
 
 .modal-main-image-container {
   width: 60vw;
+  max-width: 480px;
   aspect-ratio: 3 / 4;
   background-color: #000;
   display: flex;
