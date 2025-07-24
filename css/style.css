@@ -264,3 +264,18 @@ footer a:hover {
     height: 45px;
   }
 }
+
+.language-selector {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.language-selector select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 3px solid #872b9e;
+  background-color: #fff0f6;
+  color: #5a4b63;
+  font-weight: bold;
+  cursor: pointer;
+}

@@ -137,3 +137,68 @@ document.addEventListener("keydown", function (e) {
     }
   }
 });
+
+const translations = {
+  en: {
+    siteTitle: "Crowned in Style 👑",
+    roseGarden: "Rose Garden",
+    lavenderFields: "Lavender Fields",
+    cherryBlossoms: "Cherry Blossoms",
+    sunsetBreeze: "Sunset Breeze",
+    dewyMorning: "Dewy Morning",
+    goldenHour: "Golden Hour",
+    developedBy: "Developed By",
+    rights: "All Rights Reserved",
+    rightsText: "All rights reserved...",
+    socialFollow: "Social Media - Follow Us",
+  },
+  fr: {
+    siteTitle: "Couronnée avec Style 👑",
+    roseGarden: "Jardin de Roses",
+    lavenderFields: "Champs de Lavande",
+    cherryBlossoms: "Fleurs de Cerisier",
+    sunsetBreeze: "Brise au Coucher du Soleil",
+    dewyMorning: "Matinée Rosée",
+    goldenHour: "Heure Dorée",
+    developedBy: "Développé Par",
+    rights: "Tous Droits Réservés",
+    rightsText: "Tous droits réservés...",
+    socialFollow: "Réseaux Sociaux - Suivez-nous",
+  },
+  it: {
+    siteTitle: "Incoronata con Stile 👑",
+    roseGarden: "Giardino di Rose",
+    lavenderFields: "Campi di Lavanda",
+    cherryBlossoms: "Fiori di Ciliegio",
+    sunsetBreeze: "Brezza al Tramonto",
+    dewyMorning: "Mattina Rugiadosa",
+    goldenHour: "Ora d'Oro",
+    developedBy: "Sviluppato Da",
+    rights: "Tutti i Diritti Riservati",
+    rightsText: "Tutti i diritti riservati...",
+    socialFollow: "Social Media - Seguici",
+  },
+};
+
+function setLanguage(lang) {
+  const elements = document.querySelectorAll("[data-i18n]");
+  elements.forEach((el) => {
+    const key = el.getAttribute("data-i18n");
+    if (translations[lang][key]) {
+      el.textContent = translations[lang][key];
+    }
+  });
+  localStorage.setItem("preferredLanguage", lang);
+}
+
+const languageSwitcher = document.getElementById("languageSwitcher");
+languageSwitcher.addEventListener("change", () => {
+  setLanguage(languageSwitcher.value);
+});
+
+// Initialize language on load
+document.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem("preferredLanguage") || "fr";
+  languageSwitcher.value = savedLang;
+  setLanguage(savedLang);
+});

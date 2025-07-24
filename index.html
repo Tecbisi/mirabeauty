@@ -10,7 +10,7 @@
   <body>
     <header>
       <div class="logo">🌸 Mira Beauty</div>
-      <div class="title">Elegant 💖</div>
+      <div class="title" data-i18n="siteTitle">Elegant 💖</div>
       <div class="social">
         <a href="https://www.facebook.com/myrabeautyhairstyle">
           <img
@@ -38,6 +38,15 @@
             height="16"
             style="vertical-align: middle; margin-right: 6px"
         /></a>
+      </div>
+
+      <!-- Language Selector Dropdown -->
+      <div class="language-selector">
+        <select id="languageSwitcher">
+          <option value="fr">🇫🇷 Français</option>
+          <option value="en">🇬🇧 English</option>
+          <option value="it">🇮🇹 Italiano</option>
+        </select>
       </div>
     </header>
 
@@ -82,30 +91,33 @@
 
     <footer>
       <div>
-        <h4>Developed By</h4>
-        <p>Email: tecbisi@gmail.com</p>
-        <a
-          href="https://www.youtube.com/channel/UCLluMRbpbifJXzH5UzeigDQ"
-          target="_blank"
-        >
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png"
-            alt="YouTube"
-            width="16"
-            height="16"
-            style="vertical-align: middle; margin-right: 6px"
-          />
-          YouTube
-        </a>
+        <div>
+          <h4 data-i18n="developedBy">Developed By</h4>
+          <p>Email: tecbisi@gmail.com</p>
+          <a
+            href="https://www.youtube.com/channel/UCLluMRbpbifJXzH5UzeigDQ"
+            target="_blank"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png"
+              alt="YouTube"
+              width="16"
+              height="16"
+              style="vertical-align: middle; margin-right: 6px"
+            />
+            YouTube
+          </a>
+        </div>
       </div>
-
       <div>
-        <h4>All Rights Reserved</h4>
-        <p>2025 - <span id="currentYear"></span> All rights reserved...</p>
+        <h4 data-i18n="rights">All Rights Reserved</h4>
+        <p>
+          <span id="currentYear"></span>
+          <span data-i18n="rightsText">All rights reserved...</span>
+        </p>
       </div>
-
       <div>
-        <h4>Social Media - Follow Us</h4>
+        <h4 data-i18n="socialFollow">Social Media - Follow Us</h4>
         <a href="https://www.facebook.com/myrabeautyhairstyle" target="_blank">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
