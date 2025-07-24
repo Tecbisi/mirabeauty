@@ -2,336 +2,89 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Responsive Image Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mira Beauty</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <!----TODO ADD LOGO-->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="header-left">
-        <div class="logo">MIRA</div>
-      </div>
-
-      <div class="header-center">
-        <h1 class="gallery-title">My Photo Gallery</h1>
-      </div>
-
-      <div class="header-right">
-        <nav class="social-links">
-          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-            <img
-              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"
-              alt="Facebook"
-            />
-          </a>
-          <a href="https://twitter.com" target="_blank" aria-label="Twitter">
-            <img
-              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg"
-              alt="Twitter"
-            />
-          </a>
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            aria-label="Instagram"
-          >
-            <img
-              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
-              alt="Instagram"
-            />
-          </a>
-        </nav>
+    <header>
+      <div class="logo">🌸 Mira Beauty</div>
+      <div class="title">Elegant Image</div>
+      <div class="social">
+        <a href="#">🌷 FB</a>
+        <a href="#">🌸 IG</a>
+        <a href="#">💖 TW</a>
       </div>
     </header>
 
-    <div class="gallery" id="gallery">
-      <!-- Main Image 1 -->
-      <div class="image-card">
+    <section class="gallery">
+      <div class="gallery-item" data-category="roseGarden">
         <img
-          src="https://images.unsplash.com/photo-1605460375648-278bcbd579a6?auto=format&fit=crop&w=400&q=60"
-          data-title="Mountain Explorer"
-          data-links='[
-           "https://images.unsplash.com/photo-1605460375648-278bcbd579a6?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1549921296-3a4d3c60a5a6?auto=format&fit=crop&w=400&q=60"
-         ]'
+          src="img/1/1.jpeg"
+          alt="Rose Garden 1"
         />
-        <div class="title">Mountain Explorer</div>
+        <div class="image-title">Rose Garden</div>
       </div>
 
-      <!-- Main Image 2 -->
-      <div class="image-card">
+      <div class="gallery-item" data-category="lavenderFields">
         <img
-          src="https://images.unsplash.com/photo-1572373671793-1d1a6cf0f046?auto=format&fit=crop&w=400&q=60"
-          data-title="Desert Sunset"
-          data-links='[
-           "https://images.unsplash.com/photo-1549921296-3a4d3c60a5a6?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1572373671793-1d1a6cf0f046?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=60"
-         ]'
+          src="img/2/1.jpeg"
+          alt="Lavender Fields 1"
         />
-        <div class="title">Desert Sunset</div>
+        <div class="image-title">Lavender Fields</div>
       </div>
 
-      <!-- Main Image 3 -->
-      <div class="image-card">
+      <div class="gallery-item" data-category="cherryBlossoms">
         <img
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=60"
-          data-title="Ocean Breeze"
-          data-links='[
-           "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1572373671793-1d1a6cf0f046?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=60"
-         ]'
+          src="img/3/1.jpeg"
+          alt="Cherry Blossoms 1"
         />
-        <div class="title">Ocean Breeze</div>
+        <div class="image-title">Cherry Blossoms</div>
       </div>
 
-      <!-- Main Image 4 -->
-      <div class="image-card">
+      <div class="gallery-item" data-category="sunsetBreeze">
         <img
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=60"
-          data-title="Ocean Breeze"
-          data-links='[
-           "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1572373671793-1d1a6cf0f046?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=60"
-         ]'
+          src="img/4/1.jpeg"
+          alt="Sunset Breeze 1"
         />
-        <div class="title">Ocean Breeze</div>
-      </div>
-      <!-- Main Image 5 -->
-      <div class="image-card">
-        <img
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=60"
-          data-title="Ocean Breeze"
-          data-links='[
-           "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1572373671793-1d1a6cf0f046?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=60"
-         ]'
-        />
-        <div class="title">Ocean Breeze</div>
-      </div>
-      <!-- Main Image 6 -->
-      <div class="image-card">
-        <img
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=60"
-          data-title="Ocean Breeze"
-          data-links='[
-           "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1572373671793-1d1a6cf0f046?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=60"
-         ]'
-        />
-        <div class="title">Ocean Breeze</div>
+        <div class="image-title">Sunset Breeze</div>
       </div>
 
-      <!-- Main Image 7 -->
-      <div class="image-card">
+      <div class="gallery-item" data-category="dewyMorning">
         <img
-          src="https://images.unsplash.com/photo-1605460375648-278bcbd579a6?auto=format&fit=crop&w=400&q=60"
-          data-title="Mountain Explorer"
-          data-links='[
-           "https://images.unsplash.com/photo-1605460375648-278bcbd579a6?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1549921296-3a4d3c60a5a6?auto=format&fit=crop&w=400&q=60"
-         ]'
+          src="img/5/1.jpeg"
+          alt="Dewy Morning 1"
         />
-        <div class="title">Mountain Explorer</div>
-      </div>
-      <!-- Main Image 8 -->
-      <div class="image-card">
-        <img
-          src="https://images.unsplash.com/photo-1605460375648-278bcbd579a6?auto=format&fit=crop&w=400&q=60"
-          data-title="Mountain Explorer"
-          data-links='[
-           "https://images.unsplash.com/photo-1605460375648-278bcbd579a6?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1549921296-3a4d3c60a5a6?auto=format&fit=crop&w=400&q=60"
-         ]'
-        />
-        <div class="title">Mountain Explorer</div>
-      </div>
-      <!-- Main Image 9 -->
-      <div class="image-card">
-        <img
-          src="https://images.unsplash.com/photo-1605460375648-278bcbd579a6?auto=format&fit=crop&w=400&q=60"
-          data-title="Mountain Explorer"
-          data-links='[
-           "https://images.unsplash.com/photo-1605460375648-278bcbd579a6?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1549921296-3a4d3c60a5a6?auto=format&fit=crop&w=400&q=60"
-         ]'
-        />
-        <div class="title">Mountain Explorer</div>
-      </div>
-      <!-- Main Image 10 -->
-      <div class="image-card">
-        <img
-          src="https://images.unsplash.com/photo-1605460375648-278bcbd579a6?auto=format&fit=crop&w=400&q=60"
-          data-title="Mountain Explorer"
-          data-links='[
-           "https://images.unsplash.com/photo-1605460375648-278bcbd579a6?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1549921296-3a4d3c60a5a6?auto=format&fit=crop&w=400&q=60"
-         ]'
-        />
-        <div class="title">Mountain Explorer</div>
+        <div class="image-title">Dewy Morning</div>
       </div>
 
-      <!-- Main Image 11 -->
-      <div class="image-card">
+      <div class="gallery-item" data-category="goldenHour">
         <img
-          src="https://images.unsplash.com/photo-1605460375648-278bcbd579a6?auto=format&fit=crop&w=400&q=60"
-          data-title="Mountain Explorer"
-          data-links='[
-           "https://images.unsplash.com/photo-1605460375648-278bcbd579a6?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1549921296-3a4d3c60a5a6?auto=format&fit=crop&w=400&q=60"
-         ]'
+          src="img/6/1.jpeg"
+          alt="Golden Hour 1"
         />
-        <div class="title">Mountain Explorer</div>
+        <div class="image-title">Golden Hour</div>
       </div>
-      <!-- Main Image 12 -->
-      <div class="image-card">
-        <img
-          src="https://images.unsplash.com/photo-1605460375648-278bcbd579a6?auto=format&fit=crop&w=400&q=60"
-          data-title="Mountain Explorer"
-          data-links='[
-           "https://images.unsplash.com/photo-1605460375648-278bcbd579a6?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1549921296-3a4d3c60a5a6?auto=format&fit=crop&w=400&q=60"
-         ]'
-        />
-        <div class="title">Mountain Explorer</div>
-      </div>
-      <!-- Main Image 13 -->
-      <div class="image-card">
-        <img
-          src="https://images.unsplash.com/photo-1605460375648-278bcbd579a6?auto=format&fit=crop&w=400&q=60"
-          data-title="Mountain Explorer"
-          data-links='[
-           "https://images.unsplash.com/photo-1605460375648-278bcbd579a6?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1549921296-3a4d3c60a5a6?auto=format&fit=crop&w=400&q=60"
-         ]'
-        />
-        <div class="title">Mountain Explorer</div>
-      </div>
+    </section>
 
-      <!-- Main Image 14 -->
-      <div class="image-card">
-        <img
-          src="https://images.unsplash.com/photo-1605460375648-278bcbd579a6?auto=format&fit=crop&w=400&q=60"
-          data-title="Mountain Explorer"
-          data-links='[
-           "https://images.unsplash.com/photo-1605460375648-278bcbd579a6?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1549921296-3a4d3c60a5a6?auto=format&fit=crop&w=400&q=60"
-         ]'
-        />
-        <div class="title">Mountain Explorer</div>
-      </div>
-      <!-- Main Image 15 -->
-      <div class="image-card">
-        <img
-          src="https://images.unsplash.com/photo-1605460375648-278bcbd579a6?auto=format&fit=crop&w=400&q=60"
-          data-title="Mountain Explorer"
-          data-links='[
-           "https://images.unsplash.com/photo-1605460375648-278bcbd579a6?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1549921296-3a4d3c60a5a6?auto=format&fit=crop&w=400&q=60"
-         ]'
-        />
-        <div class="title">Mountain Explorer</div>
-      </div>
-
-      <!-- Main Image 16 -->
-      <div class="image-card">
-        <img
-          src="https://images.unsplash.com/photo-1605460375648-278bcbd579a6?auto=format&fit=crop&w=400&q=60"
-          data-title="Mountain Explorer"
-          data-links='[
-           "https://images.unsplash.com/photo-1605460375648-278bcbd579a6?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1549921296-3a4d3c60a5a6?auto=format&fit=crop&w=400&q=60"
-         ]'
-        />
-        <div class="title">Mountain Explorer</div>
-      </div>
-      <!-- Main Image 17 -->
-      <div class="image-card">
-        <img
-          src="https://images.unsplash.com/photo-1605460375648-278bcbd579a6?auto=format&fit=crop&w=400&q=60"
-          data-title="Mountain Explorer"
-          data-links='[
-           "https://images.unsplash.com/photo-1605460375648-278bcbd579a6?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1549921296-3a4d3c60a5a6?auto=format&fit=crop&w=400&q=60"
-         ]'
-        />
-        <div class="title">Mountain Explorer</div>
-      </div>
-
-      <!-- Main Image 18 -->
-      <div class="image-card">
-        <img
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=60"
-          data-title="Ocean Breeze"
-          data-links='[
-           "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1572373671793-1d1a6cf0f046?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=60"
-         ]'
-        />
-        <div class="title">Ocean Breeze</div>
-      </div>
-
-      <!-- Main Image 19 -->
-      <div class="image-card">
-        <img
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=60"
-          data-title="Ocean Breeze"
-          data-links='[
-           "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1572373671793-1d1a6cf0f046?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=60"
-         ]'
-        />
-        <div class="title">Ocean Breeze</div>
-      </div>
-
-      <!-- Main Image 20 -->
-      <div class="image-card">
-        <img
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=60"
-          data-title="Ocean Breeze"
-          data-links='[
-           "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1572373671793-1d1a6cf0f046?auto=format&fit=crop&w=400&q=60",
-           "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=60"
-         ]'
-        />
-        <div class="title">Ocean Breeze</div>
+    <div class="modal" id="imageModal" onclick="closeModal(event)">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal(event)">&times;</span>
+        <div class="modal-main-image-container">
+          <img id="modalImage" src="" alt="Expanded View" />
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="thumbnail-container" id="thumbnailContainer"></div>
       </div>
     </div>
 
-    <!-- Overlay Lightbox -->
-    <div class="overlay" id="overlay">
-      <div class="close-btn" onclick="closeOverlay()">×</div>
-      <img class="main" id="mainImage" src="" />
-      <div class="linked-images" id="linkedImages"></div>
-    </div>
-
-    <footer class="site-footer">
-      <p>
-        &copy;2025 - <span id="currentYear"></span> My Photo Gallery. All rights
-        reserved.
-      </p>
+    <footer>
+      <p>2025 - <span id="currentYear"></span> All rights reserved...</p>
     </footer>
 
     <script src="js/script.js"></script>
   </body>
 </html>
-
