@@ -15,7 +15,7 @@ const imageData = {
     "img/1/5.jpeg",
     "img/1/6.jpeg",
     "img/1/7.jpeg",
-  ], 
+  ],
   lavenderFields: [
     "img/2/1.jpeg",
     "img/2/2.jpeg",
