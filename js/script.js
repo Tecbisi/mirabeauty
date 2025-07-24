@@ -149,7 +149,7 @@ const translations = {
     goldenHour: "Golden Hour",
     developedBy: "Developed By",
     rights: "All Rights Reserved",
-    rightsText: "All rights reserved...",
+    rightsText: "@Mira Beauty ...",
     socialFollow: "Social Media - Follow Us",
   },
   fr: {
@@ -162,7 +162,7 @@ const translations = {
     goldenHour: "Heure Dorée",
     developedBy: "Développé Par",
     rights: "Tous Droits Réservés",
-    rightsText: "Tous droits réservés...",
+    rightsText: "@Mira Beauty...",
     socialFollow: "Réseaux Sociaux - Suivez-nous",
   },
   it: {
@@ -175,7 +175,7 @@ const translations = {
     goldenHour: "Ora d'Oro",
     developedBy: "Sviluppato Da",
     rights: "Tutti i Diritti Riservati",
-    rightsText: "Tutti i diritti riservati...",
+    rightsText: "@Mira Beauty...",
     socialFollow: "Social Media - Seguici",
   },
 };
