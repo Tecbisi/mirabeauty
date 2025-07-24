@@ -7,6 +7,68 @@ let currentSlideshowImages = [];
 
 // Define your image data structure (using higher res images for modal)
 const imageData = {
+  sunsetBreeze_01: [
+    "img/7/1.jpeg",
+    "img/7/2.jpeg",
+    "img/7/3.jpeg",
+    "img/7/4.jpeg",
+    "img/7/5.jpeg",
+  ],
+  sunsetBreeze_03: [
+    "img/8/1.jpeg",
+    "img/8/2.jpeg",
+    "img/8/3.jpeg",
+    "img/8/4.jpeg",
+    "img/8/5.jpeg",
+  ],
+  sunsetBreeze_02: [
+    "img/14/1.jpeg",
+    "img/14/2.jpeg",
+    "img/14/3.jpeg",
+    "img/14/4.jpeg",
+  ],
+  sunsetBreeze_04: [
+    "img/9/1.jpeg",
+    "img/9/2.jpeg",
+    "img/9/3.jpeg",
+    "img/9/4.jpeg",
+    "img/9/5.jpeg",
+    "img/9/6.jpeg",
+  ],
+  sunsetBreeze_05: [
+    "img/10/1.jpeg",
+    "img/10/2.jpeg",
+    "img/10/3.jpeg",
+    "img/10/4.jpeg",
+    "img/10/5.jpeg",
+    "img/10/6.jpeg",
+  ],
+  sunsetBreeze_06: [
+    "img/11/1.jpeg",
+    "img/11/2.jpeg",
+    "img/11/3.jpeg",
+    "img/11/4.jpeg",
+    "img/11/5.jpeg",
+    "img/11/6.jpeg",
+    "img/11/6.jpeg",
+    "img/11/7.jpeg",
+    "img/11/8.jpeg",
+  ],
+  sunsetBreeze_07: [
+    "img/12/1.jpeg",
+    "img/12/2.jpeg",
+    "img/12/3.jpeg",
+    "img/12/4.jpeg",
+    "img/12/5.jpeg",
+    "img/12/6.jpeg",
+    "img/12/6.jpeg",
+  ],
+  sunsetBreeze_08: [
+    "img/13/1.jpeg",
+    "img/13/2.jpeg",
+    "img/13/3.jpeg",
+    "img/13/4.jpeg",
+  ],
   roseGarden: [
     "img/1/1.jpeg",
     "img/1/2.jpeg",
